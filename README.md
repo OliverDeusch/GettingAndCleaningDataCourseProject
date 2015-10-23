@@ -1,6 +1,13 @@
 This repository contains all elements required in order to solve the Coursera 
 course project for "Getting and Cleaning Data".
 
+The files in this repo:
+- run_analysis.R	The R code.
+- CodeBook.txt		Contains a description of the R code, the input and output data and the variables.
+- features_info.txt	The detailed description of the variables supplied with the original data.
+- README.md			This readme file.
+
+
 The data in brief:
 The data used in this project are measurements of mobile phones accelerometers. Data were generated
 by 30 subjects performing 6 activities. The data itself are measurements and various transformations
@@ -19,14 +26,3 @@ The operations performed by the R script run_analysis.R in brief:
 - Summarize data by calculating means for all 86 variables that were extracted from the original data
 
 
-- run_analysis.R
-The R code.
-
-- CodeBook.txt
-Contains a description of the R code, the input and output data and the variables.
-
-- features_info.txt
-The detailed description of the variables supplied with the original data.
-
-- README.md
-This readme file.
