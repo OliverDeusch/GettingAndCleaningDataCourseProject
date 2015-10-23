@@ -2,10 +2,16 @@
 # Codebook #
 ############
 
+This file contains a description of how the Coursera course project on "Getting and Cleaning" data is solved.
+
 
 Input data:
 ###########
 
+All data required to run the script can be obtained via the link below:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+The following files are required:
 x 'features.txt': List of all features.
 x 'activity_labels.txt': Links the class labels with their activity name.
 x 'train/X_train.txt': Training set.
@@ -14,6 +20,8 @@ x 'test/X_test.txt': Test set.
 x 'test/y_test.txt': Test labels.
 x 'train/subject_train.txt': Each row identifies the subject who performed the activity.
 x 'test/subject_test.txt': Each row identifies the subject who performed the activity.
+
+Variables are described in features_info.txt in this repo.
 
 
 R script:
@@ -45,5 +53,7 @@ It is tidy because it adheres to the tidy data principles:
 Variables:
 ##########
 
-
+Variables in the original data are described in features_info.txt.
+The variables "Activity" and "Subject" are introduced to enable the summary step.
+Activity is a descriptive variable and Subject is a numeric code (presumably for anonymity purposes).
 

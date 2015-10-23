@@ -35,12 +35,6 @@ row_labels_combined <- gsub(4, "SITTING", row_labels_combined)
 row_labels_combined <- gsub(5, "STANDING", row_labels_combined)
 row_labels_combined <- gsub(6, "LAYING", row_labels_combined)
 
-#for (i in 1:length(unique(row_labels_combined))) {
-#  test <- unique(row_labels_combined)[i]
-#  row_labels_combined[row_labels_combined == test] <- as.character(activity_code$V2[activity_code$V1 == test])
-#}
-#rm(i, test)
-
 # Add the descriptive activity names to extracted data frame
 library(dplyr)
 extracted <- mutate(extracted, Activity = row_labels_combined)
