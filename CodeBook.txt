@@ -1,0 +1,49 @@
+############
+# Codebook #
+############
+
+
+Input data:
+###########
+
+x 'features.txt': List of all features.
+x 'activity_labels.txt': Links the class labels with their activity name.
+x 'train/X_train.txt': Training set.
+x 'train/y_train.txt': Training labels.
+x 'test/X_test.txt': Test set.
+x 'test/y_test.txt': Test labels.
+x 'train/subject_train.txt': Each row identifies the subject who performed the activity.
+x 'test/subject_test.txt': Each row identifies the subject who performed the activity.
+
+
+R script:
+#########
+
+The script does the following:
+- Read data into R, there are 8 files to read (listed above) all of which are supplied as part of the course.
+- Assign labels (variable names) to data.
+- Merge training and test data set
+- Extract variables (columns) containing "std" or "mean" (ignoring case): 86 columns
+- Convert activity codes to descriptive activity names and add to data
+- Add subject information to data, now 88 columns
+- Group data by activity and subject
+- Summarize data by calculating means for all 86 variables
+
+
+Output data:
+############
+
+A data frame containing means of all 86 variables previously extracted for all combinations of subjects and
+activities (30 subjects x 6 activities = 180 combinations).
+
+It is tidy because it adheres to the tidy data principles:
+- Each variable forms a column. 86 of the original variables, plus 2 extra variables: activity and subject.
+- Each observation forms a row. Here the means of the input data.
+- Each type of observational unit forms a table. It is only one table.
+
+
+Variables:
+##########
+
+
+
